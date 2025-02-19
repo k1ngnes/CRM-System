@@ -1,7 +1,10 @@
-import './App.css';
+import styles from './styles.module.scss';
+import { TasksPage } from './pages/TasksPage/TasksPage.tsx';
 
-function App() {
-  return <></>;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <div className={styles.container}>
+      <TasksPage />
+    </div>
+  );
+};
